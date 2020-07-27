@@ -8,4 +8,4 @@ Run `npm start` for a dev server. Navigate to `http://localhost:{PORT IN YOUR EN
 
 ## For Production
 
-Edit package.json and change `nodemon app.js` to `node app.js`.
+In package.json inside `scripts` change `nodemon app.js` to `node app.js`.

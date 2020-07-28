@@ -53,8 +53,7 @@ router.post('/register', async (req,res) => {
 
 		// Sending to the database
 		let html = "<p>Please Confirm your Account.</p><p>OTP: "+otp+"</p>";
-		mailer.send(
-			"gitclone0401@gmail.com", 
+		mailer.send( 
 			req.body.email,
 			"Confirm Account",
 			html
@@ -187,7 +186,6 @@ router.post('/resendOtp', async (req, res) => {
 					let otp = randomOTP.randomNumber(4);
 					let html = "<p>Please Confirm your Account.</p><p>OTP: "+otp+"</p>";
 					mailer.send(
-						"gitclone0401@gmail.com", 
 						req.body.email,
 						"Confirm Account",
 						html
